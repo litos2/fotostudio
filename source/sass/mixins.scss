@@ -1,0 +1,31 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-reset {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+@mixin wrapper {
+  width: 100%;
+  max-width: calc($md - 1px);
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include tablet {
+    max-width: calc($lg - 1px);
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @include desktop {
+    max-width: $lg;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
