@@ -1,0 +1,14 @@
+.main-nav {
+  display: block;
+  position: absolute;
+  top: -100vw;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  visibility: hidden;
+}
+
+.main-nav__list {
+	@include list-reset;
+  display: flex;
+}

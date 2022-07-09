@@ -11,9 +11,19 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="#">
-          Логотип
+        <a class="main-header__logo" href="#">          
+          <svg class="main-header__logo-icon main-header__logo-icon--mobile" width="63" height="20">
+            <use href="./img/sprite.svg#logo-mobile"></use>
+          </svg>          
         </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+
+          <svg class="main-header__toggle-burger" width="33" height="34">
+            <use href="./img/sprite.svg#icon-burger"></use>
+          </svg>
+
+        </button>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -33,10 +43,9 @@
             </li>
           </ul>
         </nav>
-        <button class="main-header__toggle" type="button">
+        <button class="main-header__phone-button" type="button">
           Обратный звонок
         </button>
-
         <div class="main-header__phone">
           <a class="main-header__phone-link" href="tel:+74993446091">+7 (499) 344 60 91</a>
         </div>
@@ -102,7 +111,7 @@
               <img class="locations__slider-image" src="" alt="Фото 3">
             </a>
           </div>
-          <a href="" class="button location-button">
+          <a href="" class="button locations__button">
             Выбрать локацию 
           </a>
         </div>
@@ -120,72 +129,74 @@
           <h2 class="services__title">
             Виды услуг
           </h2>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-1.jpg" alt="">
-            <p class="services__image">
-              Фотосессия Лав Стори
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-2.jpg" alt="">
-            <p class="services__image">
-              Фотосессия для подростков
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-3.jpg" alt="">
-            <p class="services__image">
-              Парная фотосессия
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-4.jpg" alt="">
-            <p class="services__image">
-              Фотосессия для парней
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-5.jpg" alt="">
-            <p class="services__image">
-              Групповая фотосессия
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-6.jpg" alt="">
-            <p class="services__image">
-              Фотосессия Лукбук
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-7.jpg" alt="">
-            <p class="services__image">
-              Семейная фотосессия (дети +14)
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-8.jpg" alt="">
-            <p class="services__image">
-              Фотосессия для девушек
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-9.jpg" alt="">
-            <p class="services__image">
-              Фотосессия для беременных
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-10.jpg" alt="">
-            <p class="services__image">
-              Фотосессия с животными
-            </p>
-          </a>
-          <a class="services__link" href="#">
-            <img class="services__image" src="../img/photo-11.jpg" alt="">
-            <p class="services__image">
-              Фотосессия «Деловой стиль»
-            </p>
-          </a>
+          <div class="services__photo-wrapper">
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-1.jpg" alt="">
+              <p class="services__image">
+                Фотосессия Лав Стори
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-2.jpg" alt="">
+              <p class="services__image">
+                Фотосессия для подростков
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-3.jpg" alt="">
+              <p class="services__image">
+                Парная фотосессия
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-4.jpg" alt="">
+              <p class="services__image">
+                Фотосессия для парней
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-5.jpg" alt="">
+              <p class="services__image">
+                Групповая фотосессия
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-6.jpg" alt="">
+              <p class="services__image">
+                Фотосессия Лукбук
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-7.jpg" alt="">
+              <p class="services__image">
+                Семейная фотосессия (дети +14)
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-8.jpg" alt="">
+              <p class="services__image">
+                Фотосессия для девушек
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-9.jpg" alt="">
+              <p class="services__image">
+                Фотосессия для беременных
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-10.jpg" alt="">
+              <p class="services__image">
+                Фотосессия с животными
+              </p>
+            </a>
+            <a class="services__link" href="#">
+              <img class="services__image" src="../img/photo-11.jpg" alt="">
+              <p class="services__image">
+                Фотосессия «Деловой стиль»
+              </p>
+            </a>
+          </div>
         </div>
       </section>
       <!-- Секция Этапы работ -->
@@ -312,7 +323,7 @@
               оборудования часто зависит качество получающихся фотоснимков.
             </p>
           </div>
-          <button class="text-block-button">
+          <button class="text-block__button">
             Подробнее
           </button>
         </div>
@@ -364,7 +375,7 @@
                   </button>
                 </div>
               </div>
-              <button class="price__button button">
+              <button class="button price__button">
                 Забронировать
               </button>
             </li>
@@ -536,7 +547,7 @@
             <p>
               Срок действия сертификата: 2 месяца со дня приобретения.
             </p>
-            <button class="promo__button button">
+            <button class="button promo__button">
               Приобрести
             </button>
           </div>
@@ -648,31 +659,33 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href="#">
-          Логотип
-        </a>
-        <nav class="footer-nav">
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="№">Портфолио</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="catalog.html">Виды работ</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="form.html">О фотостудии</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link"  href="#">Услуги и цены</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link"  href="#">Отзывы</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link"  href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="main-footer__container">
+          <a class="main-footer__logo" href="#">
+            Логотип
+          </a>
+          <nav class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="№">Портфолио</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="catalog.html">Виды работ</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="form.html">О фотостудии</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link"  href="#">Услуги и цены</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link"  href="#">Отзывы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link"  href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="main-footer__social-wrapper social">
           <p class="social__title">
             Наши социцальные сети:

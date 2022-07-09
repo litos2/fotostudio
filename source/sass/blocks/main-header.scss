@@ -1,0 +1,29 @@
+.main-header {
+	@include wrapper;
+	margin: 0;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.main-header__wrapper {
+  display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-header__logo {
+	margin-right: 61px;
+}
+
+.main-header__phone-button {
+	display: none;
+}
+
+.main-header__phone {
+	order: 1;
+	margin-right: 24px;
+}
+
+.main-header__toggle {
+	order: 2;
+}

@@ -10,6 +10,18 @@
   background: none;
 }
 
+@mixin tablet {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
 @mixin wrapper {
   width: 100%;
   max-width: calc($md - 1px);
@@ -19,13 +31,13 @@
 
   @include tablet {
     max-width: calc($lg - 1px);
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @include desktop {
     max-width: $lg;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
