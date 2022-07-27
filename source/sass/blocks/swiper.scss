@@ -1,0 +1,14 @@
+.swiper__wrapper {
+  display: flex;
+}
+
+.swiper__button {
+	&::after {
+		content: "";
+		background-image: url("../../img/icons/icon-arrow.svg");
+		background-repeat: no-repeat;
+    background-size: cover;
+		width: 32px;
+		height: 32px;
+	}
+}

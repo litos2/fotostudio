@@ -1,3 +1,99 @@
-.price__list {
-	display: flex;
+.price__wrapper {
+  @include wrapper;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.price__card-wrapper {
+  padding: 45px 35px 35px;
+}
+
+.price__card-list {
+  @include list-reset;
+}
+
+.price__card-item {
+  padding-bottom: 45px;  
+  border-radius: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &--mini {
+    background-color: #F2F4F4;
+  }
+
+  &--standart {
+    background-color: #F9F4EE;
+  }
+
+  &--maxi {
+    background-color: #F5D9C6;
+  }
+}
+
+.price__card-title {
+  margin: 0;
+  padding-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.price__option-list {
+  @include list-reset;
+}
+
+.price__option-item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
+}
+
+.price__value {
+  display: block;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0em;
+  color: #333333;
+}
+
+.price__location {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #838383;
+  margin-bottom: 40px;
+}
+
+.price__option-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #333333;
+}
+
+.price__option-icon {
+  color: #4a4a4a;
+  margin-right: 8px;
+}
+
+.price__additional-services {
+  padding: 0 19px;
+  /* padding: 19px;
+  padding-right: 19px; */
+}
+
+.price__button-wrapper {
+  margin-left: 11px;
+  margin-right: 11px;
 }

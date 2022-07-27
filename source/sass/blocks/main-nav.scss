@@ -9,6 +9,6 @@
 }
 
 .main-nav__list {
-	@include list-reset;
+  @include list-reset;
   display: flex;
 }

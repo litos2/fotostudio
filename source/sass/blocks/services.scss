@@ -1,3 +1,82 @@
+.services__wrapper {
+  margin-bottom: 68px;
+}
+
 .services__photo-wrapper {
-	display: grid;
+  display: grid;
+  grid-template-areas:
+    "love teenagers"
+    "guys teenagers"
+    "group lookbook"
+    "group animals"
+    "couple family"
+    "pregnancy family"
+    "business girls";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 17px;
+}
+
+.services__image {
+  border-radius: 5px;  
+}
+
+.services__link {
+  position: relative;
+  
+
+  &--love {
+    grid-area: love;
+  }
+
+  &--teenagers {
+    grid-area: teenagers;
+  }
+
+  &--guys {
+    grid-area: guys;
+  }
+
+  &--couple {
+    grid-area: couple;
+  }
+
+  &--group {
+    grid-area: group;
+  }
+
+  &--lookbook {
+    grid-area: lookbook;
+  }
+
+  &--animals {
+    grid-area: animals;
+  }
+
+  &--family {
+    grid-area: family;
+  }
+
+  &--pregnancy {
+    grid-area: pregnancy;
+  }
+
+  &--girls {
+    grid-area: girls;
+  }
+
+  &--business {
+    grid-area: business;
+  }
+}
+
+.services__title {
+  position: absolute;
+  left: 12px;
+  bottom: 8px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 53.07%, #191919 121.9%);
 }

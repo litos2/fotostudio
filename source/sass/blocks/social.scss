@@ -1,3 +1,23 @@
 .social__list {
-	display: flex;
+  display: flex;
+  justify-content: center;
+  @include list-reset;
+  padding-bottom: 60px;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.social__title {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #333333;
 }

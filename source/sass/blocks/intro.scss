@@ -1,0 +1,29 @@
+.intro__wrapper {
+  /* padding-left: 27px;
+  padding-right: 27px; */
+  position: relative;
+  background-color: #444444;
+}
+
+.content__text {
+  /* position: relative; */
+  padding: 182px 27px 0 28px;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.content__video {
+  margin: 0;
+ 
+}
+
+.intro__description-title {
+  margin: 0;
+	display: none;
+}
+
+.intro__description-text {
+  margin: 0;
+	display: none;
+}

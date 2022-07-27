@@ -1,29 +1,41 @@
 .main-header {
-	@include wrapper;
-	margin: 0;
-	margin-top: 8px;
-	margin-bottom: 8px;
+  @include wrapper;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .main-header__wrapper {
   display: flex;
-	justify-content: flex-start;
-	align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-header__logo {
-	margin-right: 61px;
+  margin-right: 60px;
 }
 
 .main-header__phone-button {
-	display: none;
+  display: none;
 }
 
-.main-header__phone {
-	order: 1;
-	margin-right: 24px;
+.main-header__phone-link {
+  order: 1;
+  margin-right: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__phone-img {
+  margin-left: 20px;
 }
 
 .main-header__toggle {
-	order: 2;
+  order: 2;
+	padding: 0;
+	border: none;
+	background-color: #ffffff;
 }

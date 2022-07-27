@@ -1,5 +1,25 @@
+.locations__wrapper {
+  @include wrapper;
+  margin-bottom: 62px;
+}
+
 .locations__slider {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 28px;
+  margin-bottom: 24px;
+  
+  @include tablet () {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 28px;
+  }  
+}
+
+.locations__slider-link {  
+
+  &--none {
+    display: none;
+  }
+}
+
+.locations__slider-image {
+  margin: 0 auto;
 }
