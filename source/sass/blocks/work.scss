@@ -1,9 +1,31 @@
 .work {
   padding-top: 60px;
+  overflow: hidden;
 }
 
 .work__toggles {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+}
+
+.work__slider-link {
+  img {
+    width: 100%;
+  }
+}
+
+.work__swiper {
+  overflow-y: visible;
+
+  .swiper-wrapper .swiper-slide-next {
+    position: relative;
+    z-index: 3;
+    transform: scale(1.15);
+    transition: transform 0.15s ease-in-out;
+  }
+}
+
+.work__button {
+  z-index: 2;
 }

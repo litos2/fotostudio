@@ -17,12 +17,12 @@
 }
 
 .services__image {
+  width: 100%;
   border-radius: 5px;  
 }
 
 .services__link {
-  position: relative;
-  
+  position: relative;  
 
   &--love {
     grid-area: love;
@@ -67,6 +67,15 @@
   &--business {
     grid-area: business;
   }
+
+  &::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(25, 25, 25, 0) 53.07%, #191919 121.9%);
+
+    z-index: 2;
+    inset: 0;
+    position: absolute;
+  }
 }
 
 .services__title {
@@ -78,5 +87,5 @@
   font-size: 14px;
   line-height: 18px;
   color: $white;
-  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 53.07%, #191919 121.9%);
+  z-index: 3;
 }

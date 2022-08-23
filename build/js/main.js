@@ -1,1 +1,1 @@
-function initLines(){new LeaderLine(document.getElementById("element-1"),document.getElementById("element-2"),document.getElementById("element-3"),document.getElementById("element-4"),document.getElementById("element-5"),{color:"red",size:8,dash:!0})}initLines();
+const swiper=new Swiper(".work__swiper",{slidesPerView:3,pagination:{el:".swiper-pagination",type:"bullets"}});

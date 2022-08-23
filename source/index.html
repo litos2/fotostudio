@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <link rel="preload" href="fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Проект:</title>
   </head>
@@ -82,7 +83,7 @@
             <button class="button">Получить консультацию</button>
           </div>
           <div class="content__video">
-            <video width="375" height="522" autoplay poster="./img/services-photo-11.jpg">
+            <video width="320" height="522"  poster="./img/services-photo-11.jpg">
               <source src="./video/intro-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
           </div>              
@@ -93,43 +94,51 @@
       <section class="work">
         <h2 class="title title--h2">Наши работы</h2>
         <div class="swiper work__swiper">
-          <div class="swiper__wrapper">
-            <div class="swiper__slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <a class="work__slider-link" href="#">
                 <img class="work__slider-image" src="./img/mobile-work-image-1.jpg" width="208" height="230" alt="Фото 1" />
               </a>
             </div>
-            <div class="swiper__slide">
+            <div class="swiper-slide">
               <a class="work__slider-link" href="#">
                 <img class="work__slider-image" src="./img/mobile-work-image-1.jpg" alt="Фото 2" />
               </a>
             </div>
-            <div class="swiper__slide">
+            <div class="swiper-slide">
               <a class="work__slider-link" href="#">
                 <img class="work__slider-image" src="./img/mobile-work-image-3.jpg" width="208" height="230" alt="Фото 3" />
               </a>
             </div>
-            <div class="swiper__slide">
+            <div class="swiper-slide">
               <a class="work__slider-link" href="#">
                 <img class="work__slider-image" src="./img/mobile-work-image-3.jpg" width="208" height="230" alt="Фото 4" />
               </a>
             </div>
-            <div class="swiper__slide">
+            <div class="swiper-slide">
               <a class="work__slider-link" href="#">
                 <img class="work__slider-image" src="./img/mobile-work-image-3.jpg" width="208" height="230" alt="Фото 5" />
               </a>
             </div>
           </div>
-          <div class="swiper__button-prev"></div>
-          <div class="swiper__button-next"></div>
+          <div class="swiper__button-prev">
+            <button class="button-arrow work__button" type="button">
+              <svg width="14" height="22">
+                <use href="./img/sprite.svg#icon-arrow"></use>
+              </svg>
+              <span class="visually-hidden">Предыдущая локация</span>
+            </button>
+          </div>
+          <div class="swiper__button-next">
+            <button class="button-arrow button-arrow--next work__button" type="button">
+              <svg width="14" height="22">
+                <use href="./img/sprite.svg#icon-arrow"></use>
+              </svg>
+              <span class="visually-hidden">Предыдущая локация</span>
+            </button>
+          </div>
         </div>
-        <div class="work__toggles toggles">
-          <button class="toggles__item toggles__item--active" type="button" aria-label="Образец нашей работы"></button>
-          <button class="toggles__item" type="button" aria-label="Второй образец нашей работы"></button>
-          <button class="toggles__item" type="button" aria-label="Третий образец нашей работы"></button>
-          <button class="toggles__item" type="button" aria-label="Четверый образец нашей работы"></button>
-          <button class="toggles__item" type="button" aria-label="Пятый образец нашей работы"></button>
-        </div>
+        <div class="work__toggles swiper-pagination"></div>
       </section>
       <!-- Секция Наши локации -->
       <section class="locations">
@@ -137,61 +146,49 @@
         
         <div class="swiper locations-swiper">
           <div class="locations__swiper-wrapper">
-            <div class="swiper__slide">
+            <div class="swiper-slide">
               <a class="locations__swiper-link" href="#">
                 <img class="locations__swiper-image" src="./img/locations-photo-1.jpg" width="308" height="272" alt="Фото 1">
               </a>
             </div>
             
-            <div class="swiper__slide">
+            <div class="swiper-slide">
               <a class="locations__swiper-link locations__swiper-link--none" href="#">
                 <img class="locations__slider-image" src="./img/locations-photo-1.jpg" width="308" height="272" alt="Фото 2">
               </a>
             </div>
             
-            <div class="swiper__slide">
+            <div class="swiper-slide">
               <a class="locations__swiper-link locations__swiper-link--none" href="#">
                 <img class="locations__swiper-image" src="./img/locations-photo-1.jpg" width="308" height="272" alt="Фото 3">
               </a>
             </div>
           </div>
           <div class="swiper__button-prev">
-            <button class="swiper__button" type="button">
+            <button class="button-arrow locations__button" type="button">
+              <svg width="14" height="22">
+                <use href="./img/sprite.svg#icon-arrow"></use>
+              </svg>
               <span class="visually-hidden">Предыдущая локация</span>
             </button>
           </div>
           <div class="swiper__button-next">
-            <button class="swiper__button" type="button">
-              <span class="visually-hidden">Следующая локация</span>
+            <button class="button-arrow button-arrow--next locations__button--next" type="button">
+              <svg width="14" height="22">
+                <use href="./img/sprite.svg#icon-arrow"></use>
+              </svg>
+              <span class="visually-hidden">Предыдущая локация</span>
             </button>
           </div>
         </div>
         
-        
-        
-        
-        
-        
-        
-        <!-- <div class="locations__wrapper">
-          <div class="locations__slider">
-            <a class="locations__slider-link" href="#">
-              <img class="locations__slider-image" src="./img/locations-photo-1.jpg" width="308" height="272" alt="Фото 1" />
-            </a>
-            <a class="locations__slider-link locations__slider-link--none" href="#">
-              <img class="locations__slider-image" src="" alt="Фото 2" />
-            </a>
-            <a class="locations__slider-link locations__slider-link--none" href="#">
-              <img class="locations__slider-image" src="" alt="Фото 3" />
-            </a>
-          </div> -->
           <a href="" class="button locations__button"> Выбрать локацию </a>
         </div>
       </section>
       <!-- Секция Оформление фотостудии -->
       <section class="photo-studio-design">
-        <h2 class="title title--h2">Оформление фотостудии</h2>
-        <iframe width="375" height="375" src="https://www.youtube.com/embed/hIKhzZz-52c" title="интерьеры фотостудий Москва 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 class="title title--h2">Оформление фотостудии</h2>          
+        <iframe width="100%" height="375" object-fit="cover" src="https://www.youtube.com/embed/hIKhzZz-52c" title="интерьеры фотостудий Москва 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
       <!-- Виды услуг -->
       <section class="services">
@@ -656,8 +653,23 @@
             <!-- отзыв 1 -->
             <li class="review__item">
               <img class="review__image" src="./img/review-photo-1.png" alt="" />
-              <button class="slider__button  slider__button--prev" type="button">
-                <svg width="36" height="36">
+
+              <button class="button-arrow review__button" type="button">
+                <svg width="14" height="22">
+                  <use href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+                <span class="visually-hidden">Предыдущая локация</span>
+              </button>
+              <button class="button-arrow button-arrow--next review__button--next" type="button">
+                <svg width="14" height="22">
+                  <use href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+                <span class="visually-hidden">Предыдущая локация</span>
+              </button>
+              
+
+              <!-- <button class="slider__button  slider__button--prev" type="button">
+                <svg>
                   <use href="./img/sprite.svg#icon-arrow"></use>
                 </svg>
                 <span class="visually-hidden">Предыдущий отзыв</span>
@@ -667,7 +679,7 @@
                   <use href="./img/sprite.svg#icon-arrow"></use>
                 </svg>
                 <span class="visually-hidden">Следующий отзыв</span>
-              </button>
+              </button> -->
               <p class="review__author">Мария</p>
               <blockquote class="review__text">              
                 Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
@@ -723,6 +735,7 @@
                     id="form__name-label"
                     type="text"
                     name="name"
+                    placeholder="Введите ваше имя"
                   />
                 </li>
                 <li class="contacts__item">
@@ -734,6 +747,7 @@
                     id="form__email-label"
                     type="email"
                     name="name"
+                    placeholder="Введите ваш E-mail"
                   />
                 </li>
                 <li class="contacts__item">
@@ -745,6 +759,7 @@
                     id="form__phone-label"
                     type="tel"
                     name="name"
+                    placeholder="Введите ваше Телефон"
                   />
                 </li>
               </ul>
@@ -830,6 +845,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

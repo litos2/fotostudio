@@ -59,3 +59,11 @@ position: relative;
   color: #E97522;
   margin-bottom: 32px;
 }
+
+.review__button {
+  margin: 0;
+
+  &--next {
+    right: 0;
+  }
+}

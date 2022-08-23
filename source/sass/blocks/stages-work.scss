@@ -1,9 +1,9 @@
 .stages-work__wrapper {
+	/* @include wrapper; */
 	margin-bottom: 126px;
 }
 
 .stages-work__item {
-	width: 320px;
 	min-height: 174px;
 	border: 2px solid #E97522;
 	border-radius: 12px;
@@ -22,17 +22,16 @@
 		font-size: 30px;
 		font-weight: 700;
 		line-height: 34px;
-		letter-spacing: 0em;
-		text-align: center;
 		position: absolute;
-		top: 134px;
+		top: 136px;
 		left: 132px;
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
 		color: #E97522;
-		background-color: #ffffff;
-		padding: 11px 19px;
+		background-color: #f9f4ee;
+		display: grid;
+		place-items: center;
 	}
 }
 

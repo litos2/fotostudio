@@ -1,23 +1,30 @@
 .slider__button {
 	
   @include button-reset;
+  width: 36px;
+  height: 36px;
+  padding-left: 10px;
+  padding-top: 6px;
 	background-color: #ffffff;
 	border: none;
 	border-radius: 50%;
 	position: absolute;
-	filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+	/* filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));*/
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15); 
+
 	display: block;
+  top: 50%;
 
 	&--prev {
-		transform: translateY(-50%);
-    top: 55%;
+		/* transform: translateY(-50%); */
+    /* top: 55%; */
     /* left: 30px; */
   }
 
 	&--next {
-    transform: translateY(-50%);
-    top: 55%;
-    right: 130px;
+    /* transform: translateY(-50%); */
+    
+    right: 16px;
     transform: rotate(180deg);
   }
 }
