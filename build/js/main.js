@@ -1,1 +1,1 @@
-const swiper=new Swiper(".work__swiper",{slidesPerView:3,pagination:{el:".swiper-pagination",type:"bullets"}});
+const workSlider=new Swiper(".work__swiper",{slidesPerView:3,pagination:{el:".swiper-pagination",type:"bullets"}}),photoSlider=new Swiper(".slder__swiper",{slidesPerView:1,pagination:{el:".swiper-pagination",navigation:{nextEl:"",prevEl:""}}});

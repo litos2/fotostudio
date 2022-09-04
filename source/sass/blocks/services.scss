@@ -14,10 +14,26 @@
     "business girls";
   grid-template-columns: 1fr 1fr;
   grid-gap: 17px;
+
+  @include tablet() {
+    grid-template-areas:
+      "love teenagers couple"
+      "guys teenagers family"
+      "group lookbook family"
+      "group girls girls"
+      "pregnancy animals business";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  @include desktop() {
+    grid-gap: 32px;
+  }
 }
 
 .services__image {
   width: 100%;
+  height: 100%;
   border-radius: 5px;  
 }
 
@@ -75,6 +91,7 @@
     z-index: 2;
     inset: 0;
     position: absolute;
+    border-radius: 5px;
   }
 }
 

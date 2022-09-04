@@ -11,7 +11,7 @@
 	margin-bottom: 40px;
 	margin-left: 27px;
 	margin-right: 27px;
-	padding: 26px 36px 0;
+	padding: 26px 36px 36px;
 	position: relative;
 	
 
@@ -23,8 +23,8 @@
 		font-weight: 700;
 		line-height: 34px;
 		position: absolute;
-		top: 136px;
-		left: 132px;
+		/* top: 136px; */
+		left: 50%;
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
@@ -32,6 +32,12 @@
 		background-color: #f9f4ee;
 		display: grid;
 		place-items: center;
+		transform: translateX(-50%);
+		bottom: -14px;
+
+		@include tablet() {
+			left: 0.5%;
+		}
 	}
 }
 

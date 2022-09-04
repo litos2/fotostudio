@@ -9,7 +9,6 @@
 	border: none;
 	border-radius: 50%;
 	position: absolute;
-	/* filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));*/
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15); 
 
 	display: block;
@@ -17,8 +16,7 @@
 
 	&--prev {
 		/* transform: translateY(-50%); */
-    /* top: 55%; */
-    /* left: 30px; */
+  
   }
 
 	&--next {

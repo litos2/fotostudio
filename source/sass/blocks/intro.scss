@@ -5,13 +5,7 @@
   background-color: #444444;
 }
 
-.content__text {
-  /* position: relative; */
-  padding: 182px 27px 0 28px;
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-}
+
 
 .content__video {
   margin: 0;
@@ -21,9 +15,37 @@
 .intro__description-title {
   margin: 0;
 	display: none;
+
+  @include tablet {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    color: inherit;
+    padding-bottom: 15px;
+  }
+
+  @include desktop() {
+    font-size: 36px;
+    line-height: 43px;
+  }
 }
 
 .intro__description-text {
   margin: 0;
 	display: none;
+
+  @include tablet {
+    display: block;
+    color: inherit;
+    padding-bottom: 32px;
+  }
+}
+
+.intro__button {
+  width: 100%;
+
+  @include tablet {
+    width: 42%;
+  }
 }

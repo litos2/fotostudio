@@ -1,14 +1,36 @@
 .footer-nav__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 32px;
-  color: #a4a4a4;  
+  row-gap: 32px; 
   @include list-reset;
   @include wrapper;
   margin-bottom: 40px;
+
+  @include tablet() {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 16px;
+    column-gap: 60px;
+  }
+
+  @include desktop() {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-nav__item {
   display: grid;
   justify-content: center;
+}
+
+.footer-nav__link {
+  color: #4a4a4a;
+  line-height: 26px;
+  font-weight: 700;
+
+  &:hover {
+    color: #e97522;
+    transition: color 0.2s ease-in;
+  }
 }

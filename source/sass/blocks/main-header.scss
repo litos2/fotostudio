@@ -17,6 +17,26 @@
 
 .main-header__phone-button {
   display: none;
+  @include button-reset;
+  width: 162px;
+  height: 29px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 1px;
+  color: #e97522;
+  border: 1.5px solid #e97522;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: #e97522;
+    color: #ffffff;
+  }
+
+  @include tablet {
+    display: block;
+
+  }
 }
 
 .main-header__phone-link {
@@ -32,11 +52,25 @@
 
 .main-header__phone-img {
   margin-left: 20px;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .main-header__toggle {
   order: 2;
 	padding: 0;
 	border: none;
-	background-color: #ffffff;
+	background-color: #ffffff;  
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-header__call {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column-reverse;
 }

@@ -2,6 +2,21 @@
 	@include wrapper;
 	display: flex;
 	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 36px;
+
+	@include tablet() {
+		padding: 60px 80px 39px;
+		margin-bottom: 100px;
+	}
+
+	&--first {
+		background-color: #f2f4f4;
+	}
+
+	&--second {
+		background-color: #f9f4ee;
+	}
 }
 
 .text-block__wrapper h2 {
@@ -18,13 +33,16 @@
 
 .text-block__button {
 	@include button-reset;
-	margin-bottom: 36px;
 	justify-content: center;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 24px;
 	letter-spacing: 0em;
 	color: #e97522;
+
+	@include tablet() {
+		margin-left: auto;
+	}
 
 	&::after {
 		content: "";

@@ -50,7 +50,7 @@ position: relative;
   @include button-reset;
   display: block;
   margin: 0 auto;
-  font-family: Montserrat;
+  font-family: $font--primary;
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
@@ -66,4 +66,8 @@ position: relative;
   &--next {
     right: 0;
   }
+
+  /* @include tablet() {
+    width: 40%;
+  } */
 }

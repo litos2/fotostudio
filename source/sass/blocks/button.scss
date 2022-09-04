@@ -16,7 +16,8 @@
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	color: #ffffff;
-	width: 100%;
+	/* width: 100%; */
+	cursor: pointer;
 }
 
 .button-arrow {
@@ -24,13 +25,16 @@
 	
   width: 36px;
   height: 36px;
+	color: #EE7A28;
 	background-color: #ffffff;
+	fill: #ffffff;
 	border: none;
 	border-radius: 50%;
 	position: absolute;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15); 
 	top: 50%;
 	margin-left: 16px;
+	cursor: pointer;
 
 	display: grid;
 	place-items: center;
@@ -38,5 +42,14 @@
 	&--next {
 		transform: rotate(180deg);
 		right: 16px;
+	}
+
+	&:hover	{
+		background-color: #EE7A28;
+		fill: #EE7A28;
+		color: #ffffff;
+		transition: fill 0.2s ease-in;
+		transition: color 0.2s ease-in;
+		stroke: rgb(0, 42, 255);
 	}
 }

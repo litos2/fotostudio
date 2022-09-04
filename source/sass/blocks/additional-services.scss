@@ -7,13 +7,24 @@
 	margin-bottom: 12px;
 	text-align: center;
 	color: #333333;
+
+	@include tablet() {
+		font-size: 16px;
+		line-height: 22px;
+	}
 }
 
 .additional-services__button-container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 5px;
 	margin-bottom: 32px;
+
+	@include tablet() {
+		font-size: 16px;
+		margin-bottom: 52px;
+	}
 }
 
 .additional-services__button {
@@ -31,8 +42,16 @@
 	border: 1px solid #C2C2C2;
 	border-radius: 5px;
 
+	@include tablet() {
+		min-width: 82px;
+	}
+
 	&--big {
 		width: 305px;
 		grid-area: big;
+
+		@include tablet() {
+			width: 170px;
+		}
 	}
 }

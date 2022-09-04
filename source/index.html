@@ -13,12 +13,7 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="#">
-          <img
-            src="./img/logo.svg"
-            width="63"
-            height="20"
-            alt="Логотип Фотостудии"
-          />
+          <img src="./img/logo.svg" width="63" height="20" alt="Логотип Фотостудии"/>
         </a>
 
         <button class="main-header__toggle" type="button" aria-pressed="false">
@@ -49,17 +44,19 @@
           </ul>
         </nav>
 
-        <button class="main-header__phone-button" type="button">
-          Обратный звонок
-        </button>
-
-        <a class="main-header__phone-link" href="tel:+74993446091">
-          +7 (499) 344 60 91
-
-          <svg class="main-header__phone-img" width="25" height="25">
-            <use href="./img/sprite.svg#icon-call"></use>
-          </svg>
-        </a>
+        <div class="main-header__call">
+          <button class="main-header__phone-button" type="button">
+            Обратный звонок
+          </button>
+  
+          <a class="main-header__phone-link" href="tel:+74993446091">
+            +7 (499) 344 60 91
+  
+            <svg class="main-header__phone-img" width="25" height="25">
+              <use href="./img/sprite.svg#icon-call"></use>
+            </svg>
+          </a>
+        </div>        
       </div>
     </header>
     <main class="main-content">
@@ -69,18 +66,15 @@
           <div class="content__text" style="z-index: 10">
             <h1 class="title title--h1">Профессиональная<br> фотосессия в студии</h1>
             <p class="intro__description-title">
-              Наша фотостудия позволит исполнить ваши мечты
+              Наша фотостудия позволит<br> исполнить ваши мечты
             </p>
             <p class="intro__description-text">
-              Фотографии стали неотъемлемой частью нашей жизни. Это теперь не
-              просто памятные снимки в альбомах, ныне фото становиться способом
-              понравиться окружающим, получить восхищение, заявить о себе всему
-              миру. Выбор правильной фотостудии занимает далеко не последнее место
-              в получение фотографий. И мы с точностью заявляем, что нашей
-              фотостудией вы останетесь довольны и еще не раз захотите
-              возвращаться к нам.
+              Фотографии стали неотъемлемой частью нашей жизни.<br> Это теперь не просто памятные снимки в альбомах, ныне фото становиться 
+              способом<br> понравиться окружающим, получить восхищение, заявить о себе всему миру.<br> Выбор правильной фотостудии занимает далеко 
+              не последнее место в получение<br> фотографий. И мы с точностью заявляем, что нашей фотостудией вы останетесь<br> довольны и еще не 
+              раз захотите возвращаться к нам.
             </p>
-            <button class="button">Получить консультацию</button>
+            <button class="button intro__button">Получить консультацию</button>
           </div>
           <div class="content__video">
             <video width="320" height="522"  poster="./img/services-photo-11.jpg">
@@ -188,7 +182,7 @@
       <!-- Секция Оформление фотостудии -->
       <section class="photo-studio-design">
         <h2 class="title title--h2">Оформление фотостудии</h2>          
-        <iframe width="100%" height="375" object-fit="cover" src="https://www.youtube.com/embed/hIKhzZz-52c" title="интерьеры фотостудий Москва 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="photo-studio-design__video" object-fit="cover" src="https://www.youtube.com/embed/hIKhzZz-52c" title="интерьеры фотостудий Москва 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
       <!-- Виды услуг -->
       <section class="services">
@@ -292,7 +286,7 @@
       </section>
       <!-- Секция текстовый блок №1 -->
       <section class="text-block">
-        <div class="text-block__wrapper">
+        <div class="text-block__wrapper text-block__wrapper--first">
           <h2 class="title title--h2">
             Фотостудия для любых<br> идейных фотоссесий
           </h2>
@@ -373,7 +367,7 @@
       <!-- Секция Стоимость фотосесии -->
       <section class="price">
         <div class="price__wrapper">
-          <h2 class="title title--h2">Стоимость фотосесии</h2>
+          <h2 class="title title--h2 price__title">Стоимость фотосесии</h2>
           <ul class="price__card-list">
             <!-- Первая карточка -->
             <li class="price__card-item price__card-item--mini">
@@ -417,7 +411,7 @@
               <div class="price__additional-services additional-services">
                 <p class="additional-services__title">Дополнительные услуги</p>
                 <div class="additional-services__button-container">
-                  <button class="additional-services__button" type="button">
+                  <button class="additional-services__button additional-services__button" type="button">
                     Помощь<br> в позировании
                   </button>
                   <button class="additional-services__button" type="button">
@@ -429,7 +423,7 @@
                 </div>
               </div>
               <div class="price__button-wrapper">
-                <button class="button" type="button">Забронировать</button>
+                <button class="button price__button" type="button">Забронировать</button>
               </div>
             </li>
 
@@ -487,7 +481,7 @@
                 </div>
               </div>
               <div class="price__button-wrapper">
-                <button class="button" type="button">Забронировать</button>
+                <button class="button price__button" type="button">Забронировать</button>
               </div>
             </li>
 
@@ -545,7 +539,7 @@
                 </div>
               </div>
               <div class="price__button-wrapper">
-                <button class="button" type="button">Забронировать</button>
+                <button class="button price__button" type="button">Забронировать</button>
               </div>
             </li>
             
@@ -555,7 +549,7 @@
       </section>
       <!-- Секция текстовый блок №2 -->
       <section class="text-block">
-        <div class="text-block__wrapper">
+        <div class="text-block__wrapper text-block__wrapper--second">
           <h2 class="title title--h2">
             Фотоискусство в тренде. Любая фотоссесия ваша история
           </h2>
@@ -621,27 +615,32 @@
         <h2 class="title title--h2">Подарочный сертификат на фотосессию</h2>
         <div class="promo__wrapper">
           <div class="promo__wrapper-content">
-            <p class="promo__subtitle">Сертификат на фотосессию</p>
-            <h2 class="title title--h2">Это подарок,<br> который западает<br> в душу</h2>
-            <!-- <p class="promo__subtitle">Это подарок,<br> который западает<br> в душу</p> -->
-            <!-- <p>Креативное оформление</p>
-            <p>Открытый календарь</p>
-            <p>Всё включено</p> -->
+            <div class="promo__column">
+              <p class="promo__subtitle">Сертификат на фотосессию</p>
+              <h2 class="title title--h2">Это подарок,<br> который западает<br> в душу</h2>
 
-            <ul class="promo__list">
-              <li class="promo__item">
-                <p>Креативное оформление</p>
-              </li>
-              <li class="promo__item">
-                <p>Открытый календарь</p>
-              </li>
-              <li class="promo__item">
-                <p>Всё включено</p>
-              </li>
-            </ul>
-            <img class="promo__image" src="./img/envelope.png" width="267" height="267" alt="">
-            <p class="promo__validity">Срок действия сертификата: 2 месяца<br> со дня приобретения.</p>
-            <button class="button promo__button">Приобрести</button>
+              <ul class="promo__list">
+                <li class="promo__item">
+                  <p>Креативное оформление</p>
+                </li>
+                <li class="promo__item">
+                  <p>Открытый календарь</p>
+                </li>
+                <li class="promo__item">
+                  <p>Всё включено</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="promo__column">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/envelope-desktop.png 1x, img/envelope-desktop@2x.png 2x">
+                <source media="(min-width: 1024px)" srcset="img/envelope-tablet.png 1x, img/envelope-tablet@2x.png 2x">
+                <img class="promo__image" src="./img/envelope.png" srcset="img/envelope@2x.png 2x" width="267" height="267" alt="Фотография конверта">
+              </picture>            
+              <p class="promo__validity">Срок действия сертификата: 2 месяца<br> со дня приобретения.</p>
+              <button class="button promo__button">Приобрести</button>
+            </div>              
           </div>
         </div>
       </section>
@@ -667,19 +666,6 @@
                 <span class="visually-hidden">Предыдущая локация</span>
               </button>
               
-
-              <!-- <button class="slider__button  slider__button--prev" type="button">
-                <svg>
-                  <use href="./img/sprite.svg#icon-arrow"></use>
-                </svg>
-                <span class="visually-hidden">Предыдущий отзыв</span>
-              </button>
-              <button class="slider__button slider__button--next " type="button">
-                <svg width="36" height="36">
-                  <use href="./img/sprite.svg#icon-arrow"></use>
-                </svg>
-                <span class="visually-hidden">Следующий отзыв</span>
-              </button> -->
               <p class="review__author">Мария</p>
               <blockquote class="review__text">              
                 Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
@@ -717,9 +703,25 @@
       <!-- Секция Контакты -->
       <section class="contacts">
         <h2 class="visually-hidden">Обратная связь</h2>
-        <div class="contacts__map-wrapper">
+
+
+        <!-- <div class="contacts__map-wrapper">
           <img class="contacts__map" src="./img/map.png" width="340" height="541" alt="">
+        </div> -->
+
+        <div class="contacts__map-wrapper contacts__map--no-js">
+          <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639009892658!5m2!1sen!2sru"
+          height="340" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+          </iframe>
+          <!-- <div class="contacts__picture-map">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x" type="image/jpg">
+              <source media="(min-width: 660px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" type="image/jpg">
+              <img src="img/map-mobile.jpg 1x" srcset="img/map-mobile@2x.jpg 2x" alt="Карта c адресом офиса разработчиков на улице Большая Конюшенная, 19/8.">
+            </picture>
+          </div> -->
         </div>
+
         <div class="contacts__form-wrapper">
           <p class="contacts__title">Форма обратной связи</p>
           <div class="contacts__form">
@@ -845,6 +847,47 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модалка формы обратной связи -->
+    <div class="modal modal--close">
+      <div class="modal__wrapper">
+        <div class="modal__form">
+          <img src="./img/modal-image.png" alt="">
+          <span class="modal__title">Форма обратной связи</span>
+          <button class="modal__close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="form__fieldset">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label form__label--name" for="form__name-label">
+                    Имя
+                  </label>
+                  <input class="form__input form__input--name" id="form__name-label" type="text" placeholder="Введите Ваше имя" name="name" required >
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--contacts" for="form__email-label">
+                    E-mail
+                  </label>
+                  <input class="form__input form__input--contacts" id="form__email-label" type="email" placeholder="Введите ваш E-mail" required>
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--contacts" for="form__phone-label">
+                    Телефон
+                  </label>
+                    <input class="form__input form__input--contacts form__input--tel" id="form__phone-label" type="tel" placeholder="Введите ваш телефон">
+                </li>
+              </ul>
+              <button class="button modal__button" type="button">Отправить</button>
+            </fieldset>
+            <p class="modal__text">Нажимая кнопку «Отправить», вы даете согласие<br> на обработку персональных данных и соглашаетесь<br> с <span>политикой конфиденциальности</span></p>
+        </div>
+        
+      </div>
+    </div>
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>

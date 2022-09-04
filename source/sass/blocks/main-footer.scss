@@ -1,14 +1,25 @@
 .main-footer__wrapper {  
   background-color: #F2F4F4;
   padding-top: 60px;
+  margin: 0 auto;
 
   @include wrapper;
+
+  @include tablet() {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .main-footer__logo {
   display: block;
   margin: 0 auto;
   margin-bottom: 52px;
+
+  @include tablet() {
+    margin: 0;
+    margin-right: 184px;
+  }
 }
 
 .main-footer__container {
@@ -16,4 +27,15 @@
   flex-direction: column;
   border-bottom: 1px solid #b1b1b1;
   margin-bottom: 40px;
+
+  @include tablet() {
+    flex-direction: row;
+  }
+}
+
+.main-footer__social-wrapper {
+  @include tablet() {
+    display: flex;
+    justify-content: center;
+  }
 }
