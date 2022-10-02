@@ -1,7 +1,7 @@
 .work {
   position: relative;
   overflow: hidden;
-    
+
   @include wrapper;
   padding-left: 0;
   padding-right: 0;
@@ -20,8 +20,6 @@
   @include tablet() {
     margin-bottom: 80px;
   }
-
-  
 }
 
 .work__toggles {
@@ -37,13 +35,16 @@
 }
 
 .work__swiper {
-  overflow-y: visible;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   .swiper-wrapper .swiper-slide-next {
-    position: relative;
-    z-index: 3;
-    transform: scale(1.15);
-    transition: transform 0.15s ease-in-out;
+    @include tablet() {
+      position: relative;
+      z-index: 3;
+      transform: scale(1.15);
+      transition: transform 0.15s ease-in-out;
+    }
   }
 }
 
