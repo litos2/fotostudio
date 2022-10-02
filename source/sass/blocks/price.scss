@@ -66,6 +66,10 @@
   @include tablet() {
     width: 420px;
   }
+
+  @include desktop() {
+    height: 100%;
+  }
 }
 
 .price__card-title {
@@ -143,7 +147,8 @@
   width: calc(100% - 32px);
 
   @include tablet() {
-    width: calc(100% - 44px); 
+    width: calc(100% - 44px);
+    margin-top: auto;
   }
 }
 

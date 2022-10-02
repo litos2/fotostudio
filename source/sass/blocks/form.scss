@@ -33,4 +33,8 @@
 	color: #b1b1b1;	
 	border: 1px solid #DDDEE4;
 	border-radius: 5px;
+
+	&:focus::placeholder {
+		font-size: 0;
+	}
 }

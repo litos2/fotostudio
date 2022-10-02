@@ -6,6 +6,11 @@
   width: 100%;
   margin: 0;
   visibility: hidden;
+
+  @include tablet() {
+    visibility: visible;
+    position: static;
+  }
 }
 
 .main-nav__list {

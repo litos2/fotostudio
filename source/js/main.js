@@ -32,3 +32,21 @@ const photoSlider = new Swiper('.slder__swiper', {
     }
   },
 });
+
+// Модальное окно
+/* const initModal = function() {
+  const openButton = document.querySelector('.open-button');
+  const modal = document.querySelector('.modal');
+
+  openButton.addEventListener('click', function() {
+    modal.classList.add('active');
+
+    const closeButton = modal.querySelector('.modal__close-button');
+
+    closeButton.addEventListener('click', function() {
+      modal.classList.remove('active')
+    })
+  }
+}
+
+initModal(); */

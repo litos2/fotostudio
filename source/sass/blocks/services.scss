@@ -1,5 +1,13 @@
 .services__wrapper {
   margin-bottom: 68px;
+  @include wrapper;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 60px;
+
+  @include tablet() {
+    margin-bottom: 100px;
+  }
 }
 
 .services__photo-wrapper {
@@ -105,4 +113,16 @@
   line-height: 18px;
   color: $white;
   z-index: 3;
+
+  @include tablet() {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;    
+  }
+
+  @include tablet() {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;    
+  }
 }

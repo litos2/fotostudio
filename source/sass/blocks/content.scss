@@ -1,11 +1,5 @@
 .content__video {
-	&::before {
-    content: "";
-		position: absolute;
-		inset: 0;
-		z-index: 2;
-		background-color: #444444;
-	}
+	
 }
 
 .content__video video {
@@ -15,17 +9,31 @@
 }
 
 .content__text {
-	padding: 182px 27px 0 28px;
-  position: absolute;
+	padding: 182px 27px 184px 28px;
+  position: relative;
   z-index: 10;
   width: 100%;
 	color: #f5f5f5;
+	background-image: url("../../img/intro-image.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+
 
 	@include tablet {
-		padding-top: 70px;
-		padding-left: 80px;
-		padding-right: 171px;
-		margin-bottom: 32px;
+		padding: 0;
+		padding: 70px 80px;		
 		line-height: 26px;	
+	}
+
+	@include desktop() {
+		padding: 140px 100px;
+	}
+
+	&::before {
+    content: "";
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+		background-color: rgb(68, 68, 68, 0.8);
 	}
 }

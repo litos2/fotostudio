@@ -1,18 +1,36 @@
 .main-header {
-  @include wrapper;
-  margin: 0;
+  /* @include wrapper; */
+  /* margin: 0;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
 }
 
 .main-header__wrapper {
+  @include wrapper;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablet() {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
 }
 
 .main-header__logo {
   margin-right: 60px;
+  flex-shrink: 0;
+
+  @include tablet() {
+    margin-right: 53px;
+  } 
+}
+
+.main-header__logo-img {
+  @include tablet() {
+    width: 113px;
+    height: 36px;
+  }  
 }
 
 .main-header__phone-button {
@@ -48,6 +66,10 @@
   line-height: 20px;
   display: flex;
   align-items: center;
+
+  @include tablet() {
+    margin-bottom: 5px;
+  }
 }
 
 .main-header__phone-img {

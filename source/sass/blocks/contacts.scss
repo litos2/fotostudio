@@ -2,9 +2,8 @@
 	margin-bottom: 120px;
 }
 
-.contacts__map-wrapper {
-	padding-left: 17px;
-	padding-right: 17px;
+.contacts__wrapper {
+	@include wrapper;
 }
 
 .contacts__map {
@@ -19,7 +18,7 @@
 
 .contacts__form-wrapper {
 	position: relative;
-    z-index: 3;
+  z-index: 3;
 	margin-top: -100px;
 	margin-left: 27px;
 	margin-right: 27px;
@@ -69,7 +68,6 @@
 	border: 1px solid #DDDEE4;
 	border-radius: 5px;
 	padding-left: 16px;
-
 	
 	font-size: 12px;
 	font-weight: 500;
@@ -78,7 +76,9 @@
 	color: #b1b1b1;
 	opacity: 0.4;
 
-
+	&:focus::placeholder {
+		opacity: 0;
+	}
 }
 
 .contacts__button {

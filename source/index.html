@@ -13,7 +13,7 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="#">
-          <img src="./img/logo.svg" width="63" height="20" alt="Логотип Фотостудии"/>
+          <img class="main-header__logo-img" src="./img/logo.svg" width="63" height="20" alt="Логотип Фотостудии"/>
         </a>
 
         <button class="main-header__toggle" type="button" aria-pressed="false">
@@ -76,17 +76,16 @@
             </p>
             <button class="button intro__button">Получить консультацию</button>
           </div>
-          <div class="content__video">
+          <!-- <div class="content__video">
             <video width="320" height="522"  poster="./img/services-photo-11.jpg">
               <source src="./video/intro-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
-          </div>              
-          </div>
+          </div> -->
         </div>
       </section>
       <!-- Секция "Наши работы" -->
       <section class="work">
-        <h2 class="title title--h2">Наши работы</h2>
+        <h2 class="title title--h2 work__title">Наши работы</h2>
         <div class="swiper work__swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -181,56 +180,104 @@
       </section>
       <!-- Секция Оформление фотостудии -->
       <section class="photo-studio-design">
-        <h2 class="title title--h2">Оформление фотостудии</h2>          
-        <iframe class="photo-studio-design__video" object-fit="cover" src="https://www.youtube.com/embed/hIKhzZz-52c" title="интерьеры фотостудий Москва 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
+        <div class="photo-studio-design__wrapper">
+          <h2 class="title title--h2">Оформление фотостудии</h2>          
+          <iframe class="photo-studio-design__video" object-fit="cover" src="https://www.youtube.com/embed/hIKhzZz-52c" title="интерьеры фотостудий Москва 2020" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>          
+        </section>
       <!-- Виды услуг -->
       <section class="services">
         <div class="services__wrapper">
           <h2 class="title title--h2">Виды услуг</h2>
           <div class="services__photo-wrapper">
             <a class="services__link services__link--love" href="#">
-              <img class="services__image" src="../img/services-photo-1.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-1.jpg 1x, img/services-photo-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-1.jpg 1x, img/services-photo-tablet-1@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-1.jpg" srcset="img/services-photo-1@2x.jpg 2x" alt="">
+              </picture>
+
               <p class="services__title">Фотосессия Лав Стори</p>
             </a>
             <a class="services__link services__link--teenagers" href="#">
-              <img class="services__image" src="../img/services-photo-2.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-2.jpg 1x, img/services-photo-desktop-2@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-2.jpg 1x, img/services-photo-tablet-2@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-2.jpg" srcset="img/services-photo-2@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Фотосессия для подростков</p>
             </a>
             <a class="services__link services__link--couple" href="#">
-              <img class="services__image" src="../img/services-photo-3.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-3.jpg 1x, img/services-photo-desktop-3@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-3.jpg 1x, img/services-photo-tablet-3@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-3.jpg" srcset="img/services-photo-3@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Парная фотосессия</p>
             </a>
             <a class="services__link services__link--guys" href="#">
-              <img class="services__image" src="../img/services-photo-4.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-4.jpg 1x, img/services-photo-desktop-4@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-4.jpg 1x, img/services-photo-tablet-4@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-4.jpg" srcset="img/services-photo-4@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Фотосессия для парней</p>
             </a>
             <a class="services__link services__link--group" href="#">
-              <img class="services__image" src="../img/services-photo-6.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-6.jpg 1x, img/services-photo-desktop-6@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-6.jpg 1x, img/services-photo-tablet-6@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-6.jpg" srcset="img/services-photo-6@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Групповая фотосессия</p>
             </a>
             <a class="services__link services__link--lookbook" href="#">
-              <img class="services__image" src="../img/services-photo-7.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-7.jpg 1x, img/services-photo-desktop-7@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-7.jpg 1x, img/services-photo-tablet-7@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-7.jpg" srcset="img/services-photo-7@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Фотосессия Лукбук</p>
             </a>
             <a class="services__link services__link--family" href="#">
-              <img class="services__image" src="../img/services-photo-5.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-5.jpg 1x, img/services-photo-desktop-5@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-5.jpg 1x, img/services-photo-tablet-5@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-5.jpg" srcset="img/services-photo-5@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Семейная фотосессия (дети +14)</p>
             </a>
             <a class="services__link services__link--girls" href="#">
-              <img class="services__image" src="../img/services-photo-8.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-8.jpg 1x, img/services-photo-desktop-8@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-8.jpg 1x, img/services-photo-tablet-8@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-8.jpg" srcset="img/services-photo-8@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Фотосессия для девушек</p>
             </a>
             <a class="services__link services__link--pregnancy" href="#">
-              <img class="services__image" src="../img/services-photo-9.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-9.jpg 1x, img/services-photo-desktop-9@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-9.jpg 1x, img/services-photo-tablet-9@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-9.jpg" srcset="img/services-photo-9@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Фотосессия для беременных</p>
             </a>
             <a class="services__link services__link--animals" href="#">
-              <img class="services__image" src="../img/services-photo-10.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-10.jpg 1x, img/services-photo-desktop-10@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-10.jpg 1x, img/services-photo-tablet-10@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-10.jpg" srcset="img/services-photo-10@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Фотосессия с животными</p>
             </a>
             <a class="services__link services__link--business" href="#">
-              <img class="services__image" src="../img/services-photo-11.jpg" alt="" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/services-photo-desktop-11.jpg 1x, img/services-photo-desktop-11@2x.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="img/services-photo-tablet-11.jpg 1x, img/services-photo-tablet-11@2x.jpg 2x">
+                <img class="services__image" src="./img/services-photo-11.jpg" srcset="img/services-photo-11@2x.jpg 2x" alt="">
+              </picture>
               <p class="services__title">Фотосессия «Деловой стиль»</p>
             </a>
           </div>
@@ -242,7 +289,7 @@
           <h2 class="title title--h2">Этапы работ</h2>
           <!-- Этап 1 -->
           <div class="stages-work__item" id="element-1">
-            <h3 class="title title--h3">Заявка</h3>
+            <h3 class="title title--h3 stages-work__title">Заявка</h3>
             <p class="stages-work__description">
               Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
               этих мягких.
@@ -702,80 +749,54 @@
       </section>
       <!-- Секция Контакты -->
       <section class="contacts">
-        <h2 class="visually-hidden">Обратная связь</h2>
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Обратная связь</h2>
+          <div class="contacts__map-wrapper contacts__map--no-js">
+            <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639009892658!5m2!1sen!2sru"
+            height="340" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+            </iframe>
+          </div>
 
-
-        <!-- <div class="contacts__map-wrapper">
-          <img class="contacts__map" src="./img/map.png" width="340" height="541" alt="">
-        </div> -->
-
-        <div class="contacts__map-wrapper contacts__map--no-js">
-          <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639009892658!5m2!1sen!2sru"
-          height="340" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
-          </iframe>
-          <!-- <div class="contacts__picture-map">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x" type="image/jpg">
-              <source media="(min-width: 660px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" type="image/jpg">
-              <img src="img/map-mobile.jpg 1x" srcset="img/map-mobile@2x.jpg 2x" alt="Карта c адресом офиса разработчиков на улице Большая Конюшенная, 19/8.">
-            </picture>
-          </div> -->
-        </div>
-
-        <div class="contacts__form-wrapper">
-          <p class="contacts__title">Форма обратной связи</p>
-          <div class="contacts__form">
-            <fieldset class="contacts__fieldset">
-              <legend class="visually-hidden">Данные пользователя</legend>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <label class="contacts__label" for="form__name-label">
-                    Имя
-                  </label>
-                  <input
-                    class="contacts__input"
-                    id="form__name-label"
-                    type="text"
-                    name="name"
-                    placeholder="Введите ваше имя"
-                  />
-                </li>
-                <li class="contacts__item">
-                  <label class="contacts__label" for="form__email-label">
-                    E-mail
-                  </label>
-                  <input
-                    class="contacts__input"
-                    id="form__email-label"
-                    type="email"
-                    name="name"
-                    placeholder="Введите ваш E-mail"
-                  />
-                </li>
-                <li class="contacts__item">
-                  <label class="contacts__label" for="form__phone-label">
-                    Телефон
-                  </label>
-                  <input
-                    class="contacts__input"
-                    id="form__phone-label"
-                    type="tel"
-                    name="name"
-                    placeholder="Введите ваше Телефон"
-                  />
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button contacts__button">Отправить</button>
-            <p class="contacts__agreement">
-              Нажимая кнопку «Отправить», вы даете<br> согласие на обработку
-              персональных<br> данных и соглашаетесь
-              <a href="#" class="contacts__link">
-                с политикой<br> конфиденциальности
-              </a>
-            </p>
+          <!-- Форма обратной связи на карте -->
+          <div class="contacts__form-wrapper">
+            <p class="contacts__title">Форма обратной связи</p>
+            <div class="contacts__form">
+              <fieldset class="contacts__fieldset">
+                <legend class="visually-hidden">Данные пользователя</legend>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <label class="contacts__label" for="form__name-label">
+                      Имя
+                    </label>
+                    <input
+                      class="contacts__input" id="form__name-label" type="text" name="name" placeholder="Введите ваше имя"/>
+                  </li>
+                  <li class="contacts__item">
+                    <label class="contacts__label" for="form__email-label">
+                      E-mail
+                    </label>
+                    <input class="contacts__input" id="form__email-label" type="email" name="name" placeholder="Введите ваш E-mail"/>
+                  </li>
+                  <li class="contacts__item">
+                    <label class="contacts__label" for="form__phone-label">
+                      Телефон
+                    </label>
+                    <input class="contacts__input" id="form__phone-label" type="tel" name="name" placeholder="Введите ваше Телефон"/>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button contacts__button" type="submit">Отправить</button>
+              <p class="contacts__agreement">
+                Нажимая кнопку «Отправить», вы даете<br> согласие на обработку
+                персональных<br> данных и соглашаетесь
+                <a href="#" class="contacts__link">
+                  с политикой<br> конфиденциальности
+                </a>
+              </p>
+            </div>
           </div>
         </div>
+        
       </section>
     </main>
     <footer class="main-footer">
@@ -879,9 +900,9 @@
                     <input class="form__input form__input--contacts form__input--tel" id="form__phone-label" type="tel" placeholder="Введите ваш телефон">
                 </li>
               </ul>
-              <button class="button modal__button" type="button">Отправить</button>
+              <button class="button modal__button" type="submit">Отправить</button>
             </fieldset>
-            <p class="modal__text">Нажимая кнопку «Отправить», вы даете согласие<br> на обработку персональных данных и соглашаетесь<br> с <span>политикой конфиденциальности</span></p>
+            <p class="modal__text">Нажимая кнопку «Отправить», вы даете согласие<br> на обработку персональных данных и соглашаетесь<br> с <a href="#">политикой конфиденциальности</a></p>
         </div>
         
       </div>

@@ -1,9 +1,15 @@
 .stages-work__wrapper {
-	/* @include wrapper; */
-	margin-bottom: 126px;
+	@include wrapper;
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .stages-work__item {
+	width: 320px;
 	min-height: 174px;
 	border: 2px solid #E97522;
 	border-radius: 12px;
@@ -13,6 +19,10 @@
 	margin-right: 27px;
 	padding: 26px 36px 36px;
 	position: relative;
+
+	@include tablet() {
+		width: 328px;
+	}
 	
 
 	&::before {
@@ -38,6 +48,13 @@
 		@include tablet() {
 			left: 0.5%;
 		}
+	}
+}
+
+.stages-work__item h3 {
+	@include desktop {
+		font-size: 18px;
+		line-height: 22px;
 	}
 }
 

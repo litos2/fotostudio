@@ -2,7 +2,13 @@
   /* padding-left: 27px;
   padding-right: 27px; */
   position: relative;
-  background-color: #444444;
+ /*  background-color: #444444; */
+  @include wrapper;
+  padding: 0;
+  
+  @include tablet() {
+    padding: 0;
+  }
 }
 
 
@@ -28,6 +34,7 @@
   @include desktop() {
     font-size: 36px;
     line-height: 43px;
+    padding-bottom: 24px;
   }
 }
 
@@ -47,5 +54,6 @@
 
   @include tablet {
     width: 42%;
+    margin-bottom: 0;
   }
 }
